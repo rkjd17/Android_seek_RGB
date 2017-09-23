@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="19dp"
         android:max="255"
-        android:progress="255"
+        android:progress="0"
         tools:layout_editor_absoluteX="41dp"
         tools:layout_editor_absoluteY="30dp" />
 
@@ -27,7 +27,7 @@
         android:layout_below="@+id/seekBar_R"
         android:layout_marginTop="29dp"
         android:max="255"
-        android:progress="255"
+        android:progress="0"
         tools:layout_editor_absoluteX="41dp"
         tools:layout_editor_absoluteY="103dp" />
 
@@ -40,13 +40,12 @@
         android:layout_below="@+id/seekBar_G"
         android:layout_marginTop="29dp"
         android:max="255"
-        android:progress="255"
+        android:progress="0"
         tools:layout_editor_absoluteX="41dp"
         tools:layout_editor_absoluteY="176dp" />
 
     <TextView
         android:id="@+id/Color_Box"
-        android:background="@android:color/black"
         android:layout_width="270dp"
         android:layout_height="120dp"
         tools:layout_editor_absoluteX="57dp"
