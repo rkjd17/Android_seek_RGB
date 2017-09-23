@@ -20,6 +20,7 @@ public class RGB_SeekBar extends AppCompatActivity {
         SeekBar sbB = (SeekBar) findViewById(R.id.seekBar_B);
         colorBox = (TextView) findViewById(R.id.Color_Box);
 
+
         sbR.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
             @Override
@@ -73,6 +74,10 @@ public class RGB_SeekBar extends AppCompatActivity {
                 colorChange();
             }
         });
+
+        colorBox.setBackgroundColor(Color.rgb(seekR, seekG, seekB));
+        colorBox.setText("("+seekR+","+seekG+","+seekB+")");
+        colorBox.setTextColor(Color.rgb(255-seekR,255-seekG,255-seekB));
 
 
     }
