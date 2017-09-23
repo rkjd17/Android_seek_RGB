@@ -78,6 +78,9 @@ public class RGB_SeekBar extends AppCompatActivity {
     }
     private void colorChange() {
         int color = Color.rgb(seekR, seekG, seekB);
+        int reverseColor = Color.rgb(255-seekR,255-seekG,255-seekB);
         colorBox.setBackgroundColor(color);
+        colorBox.setText("("+seekR+","+seekG+","+seekB+")");
+        colorBox.setTextColor(reverseColor);
     }
 }

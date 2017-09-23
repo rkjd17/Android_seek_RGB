@@ -10,39 +10,43 @@
         android:id="@+id/seekBar_R"
         android:layout_width="303dp"
         android:layout_height="21dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="19dp"
         android:max="255"
+        android:progress="255"
         tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="30dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        tools:layout_editor_absoluteY="30dp" />
 
     <SeekBar
         android:id="@+id/seekBar_G"
         android:layout_width="303dp"
         android:layout_height="21dp"
-        android:max="255"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="103dp"
-        android:layout_below="@+id/seekBar_R"
         android:layout_alignLeft="@+id/seekBar_R"
         android:layout_alignStart="@+id/seekBar_R"
-        android:layout_marginTop="29dp" />
+        android:layout_below="@+id/seekBar_R"
+        android:layout_marginTop="29dp"
+        android:max="255"
+        android:progress="255"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="103dp" />
 
     <SeekBar
         android:id="@+id/seekBar_B"
         android:layout_width="303dp"
         android:layout_height="21dp"
-        android:max="255"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="176dp"
-        android:layout_below="@+id/seekBar_G"
         android:layout_alignLeft="@+id/seekBar_G"
         android:layout_alignStart="@+id/seekBar_G"
-        android:layout_marginTop="29dp" />
+        android:layout_below="@+id/seekBar_G"
+        android:layout_marginTop="29dp"
+        android:max="255"
+        android:progress="255"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="176dp" />
 
     <TextView
         android:id="@+id/Color_Box"
+        android:background="@android:color/black"
         android:layout_width="270dp"
         android:layout_height="120dp"
         tools:layout_editor_absoluteX="57dp"
