@@ -1,18 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.aincrad.android_project_01_seekbar_rgb.RGB_SeekBar">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <SeekBar
+        android:id="@+id/seekBar_R"
+        android:layout_width="303dp"
+        android:layout_height="21dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:max="255"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="30dp" />
 
-</android.support.constraint.ConstraintLayout>
+    <SeekBar
+        android:id="@+id/seekBar_G"
+        android:layout_width="303dp"
+        android:layout_height="21dp"
+        android:layout_alignLeft="@+id/seekBar_R"
+        android:layout_alignStart="@+id/seekBar_R"
+        android:layout_below="@+id/seekBar_R"
+        android:layout_marginTop="43dp"
+        android:max="255"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar_B"
+        android:layout_width="303dp"
+        android:layout_height="21dp"
+        android:layout_alignLeft="@+id/seekBar_G"
+        android:layout_alignStart="@+id/seekBar_G"
+        android:layout_below="@+id/seekBar_G"
+        android:layout_marginTop="42dp"
+        android:max="255"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <TextView
+        android:id="@+id/Color_Box"
+        android:layout_width="270dp"
+        android:layout_height="154dp"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="302dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="81dp" />
+
+</RelativeLayout>
